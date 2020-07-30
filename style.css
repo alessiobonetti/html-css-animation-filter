@@ -96,10 +96,51 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
 .ex-11-icon {
     font-size: 60px;
+    animation: rotation2 0.7s;
+    animation-iteration-count: infinite;
 }
+
+.ex-11-icon:hover @keyframes rotation {
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
