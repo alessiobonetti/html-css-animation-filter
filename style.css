@@ -121,11 +121,16 @@
 }
 .ex-11-icon {
     font-size: 60px;
-    animation: rotation2 0.7s;
-    animation-iteration-count: infinite;
+
 }
 
-.ex-11-icon:hover @keyframes rotation {
+.ex-11-icon:hover {
+  animation: rotation2 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+ @keyframes rotation2 {
   25% {
     transform: rotate(90deg);
   }
@@ -139,9 +144,9 @@
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
-
+}
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
