@@ -98,6 +98,7 @@
     font-size: 60px;
     animation: rotation 0.8s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes rotation {
